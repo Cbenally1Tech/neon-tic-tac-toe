@@ -1,0 +1,48 @@
+:root {
+  --bg-deep: #05060f;
+  --bg-mid: #0a0e24;
+  --cyan: #00f0ff;
+  --cyan-dim: #00f0ff55;
+  --magenta: #ff2d95;
+  --magenta-dim: #ff2d9555;
+  --lime: #b8ff3c;
+  --text: #e8f4ff;
+  --muted: #7a8ba8;
+  --grid-line: #1a2a4a;
+  --font-display: "Orbitron", sans-serif;
+  --font-body: "Space Grotesk", sans-serif;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg-deep);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+button:disabled {
+  cursor: default;
+}
